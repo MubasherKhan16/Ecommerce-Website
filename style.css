@@ -648,3 +648,16 @@ p {
   padding-bottom: 10px;
 }
 
+/* ***************************************** Contact Page ****************************************************************8 */
+.Whatsapp{
+  background-color: aqua;
+  width: 20%;
+  height: 300px;
+}
+.Whatsapp h2 {
+  text-align: center;
+}
+.fa-whatsapp {
+  height: 20%;
+  width: 20;
+}
