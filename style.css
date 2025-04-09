@@ -181,7 +181,11 @@
   padding: 20px 25px;
   padding-bottom: 6px;
   mix-blend-mode: multiply; 
-
+  transform: scale(1rem);
+}
+.product-1 img:hover{
+ 
+  transform: scale(1.1);
 }
 .addidas{
   opacity: 0.8;
@@ -191,12 +195,12 @@
 .product-1 h3{
    padding: 5px 0;
 }
-.fa{
+.checked{
   color:#ceb738;
   padding: 5px 0;
 }
 
-.fa-shopping-cart{
+.cartBox-logo{
   color: black;
   position: absolute;
   bottom: 15px;
@@ -283,6 +287,14 @@
   margin-top: 25px;
   height: 50vh;
 }
+.product-details {
+  width: 43%;
+  height: 83vh;
+  margin-top: 80px;
+  margin-left: 50px;
+  border: 1px solid rgb(7, 7, 7);
+}
+
 
 .footer-1 h3{
   font-size: 2rem;
@@ -295,6 +307,237 @@
   text-decoration: none;
   list-style: none;
 } 
+
+/* ******************************************** SHOP PAGE ************************************************************************ */
+.shop-section{
+  background-color: #7d0505;
+  color: white;
+  font-weight: 500;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 25px;
+  font-size: 2rem;
+}
+
+
+/* ***************************************** More Products ************************************************************8 */
+.more-products{
+  text-align: center;
+  margin: 100px 0;
+  
+}
+.more-products a {
+  border: 1px solid black;
+  color: white;
+  background-color: rgb(30, 41, 37);
+ padding: 10px 20px;
+ text-decoration: none;
+}
+
+/* *********************************** Product deatils page ************************* */
+
+/* styles.css */
+.product-details {
+  width: 40%;
+    height: 75vh;
+  margin-top: 80px;
+  margin-left: 50px;
+  border: 1px solid rgb(7, 7, 7);
+}
+.small-images{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  width:100% ;
+  flex-basis: 24%;
+ 
+ 
+}
+.small-images img{
+  width: 100%;
+  height: 150px;
+  padding: 20px 0px;
+  padding-bottom: 6px;
+  mix-blend-mode: multiply; 
+  cursor: pointer;
+}
+.main-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-image img {
+  mix-blend-mode: multiply;
+  width: 68%;
+  height: 21rem;
+  margin-top: 3rem;
+}
+
+#divide{
+  display: flex;
+  
+}
+
+/* ******************* Right Section of product details ****************** */
+.right-section-2{
+  margin-top: 100px;
+  margin-left: 60px;
+  width: 60%;
+  font-size: 1 rem;
+  gap: 10%;
+}
+.right-section-2 h4  {
+  padding: 10px 0 10px 0;
+}
+.right-section-2 h3  {
+  padding: 10px 0 10px 0;
+}
+.right-section-2  h2 {
+  padding: 10px 0 10px 0;
+}
+.right-section-2 select  {
+ 
+ display: block;
+  margin-bottom: 10px;
+  width: 10%;
+  padding: 10px 10px 10px 10px;
+}
+.right-section-2 input  {
+  padding: 10px 10px 10px 20px;
+  width: 10%;
+  margin-bottom: 10px;
+}
+
+.right-section-2  button {
+  padding: 10px 10px 10px 10px;
+  border: 2px solid rgb(233, 224, 224); 
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(65, 147, 120);
+    font-size: 0.8rem;
+}
+.right-section-2   p {
+  padding: 10px 0 10px 0;
+}
+
+
+
+/* ************************* Blog page ********************** */
+
+.blog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 60px 0px 0px 200px ;
+  width: 70%;
+}
+.blog-left-section img{
+  object-fit: cover;
+  width: 300px;
+  height: 300px;
+}
+.blog-right-section{
+  margin-left: 50px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.blog-right-section p{
+  padding-bottom: 10px;
+}
+
+/* ***************************************** Contact Page ****************************************************************8 */
+.Whatsapp{
+  background-color: aqua;
+  width: 20%;
+  height: 300px;
+}
+.Whatsapp h2 {
+  text-align: center;
+}
+.fa-whatsapp {
+  height: 20%;
+  width: 20;
+}
+
+
+
+/* *************addTocart*********************8 */
+
+.addToCart{
+  position: fixed;
+  top: 0;
+  right:0;
+  width: 35%;
+  background-color: #ceb738;
+  height: 100%;
+}
+
+.addToCart h2{
+  text-align: center;
+  margin: 3rem 0 3rem 0;
+  font-size: 3rem;
+}
+
+.cartImage img{
+  width: 60px;
+  height: 60px;
+  mix-blend-mode: multiply;
+  cursor: pointer;
+}
+.cartContent{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 2px solid black;
+  border-radius: 1rem;
+  margin: 0 3rem 0 3rem;
+  background-color: aliceblue;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.middle-section p{
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.middle-section p:nth-of-type(2){
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.remove-icon{
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.total {
+  text-align: end;
+  margin-right: 3rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-top: 2px solid black;
+  padding-top: 1rem;
+}
+
+.buy-button{
+  text-align: center;
+  
+}
+.buy-button button{
+  margin-top: 2rem;
+  background-color: darkgreen;
+  color: aliceblue;
+  padding: 1rem 2rem 1rem 2rem;
+  /* border: 4px solid black; */
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+
+
 
 /* ************** Media Quries ************** */
 
@@ -350,13 +593,14 @@
   box-sizing: border-box; /* Ensure padding and border are included in the width */
   margin: 26px 16px;
 }
-#divide {
+/* #divide {
   width: 100%;
-}
-#divide .product-details {
+} */
+/* #divide .product-details {
   height: 40vh;
   width: 40%;
-}
+} */
+
 .right-section-2 {
   margin-top: 100px;
   margin-left: 60px;
@@ -511,153 +755,17 @@ p {
 
 }
 
-/* ******************************************** SHOP PAGE ************************************************************************ */
-.shop-section{
-  background-color: #7d0505;
-  color: white;
-  font-weight: 500;
-  height: 40vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 25px;
-  font-size: 2rem;
-}
-
-
-/* ***************************************** More Products ************************************************************8 */
-.more-products{
-  text-align: center;
-  margin: 100px 0;
-  
-}
-.more-products a {
-  border: 1px solid black;
-  color: white;
-  background-color: rgb(30, 41, 37);
- padding: 10px 20px;
- text-decoration: none;
-}
-
-/* *********************************** Product deatils page ************************* */
-
-/* styles.css */
-.product-details {
-  width: 40%;
-  height: 60vh;
-  margin-top: 80px;
-  margin-left: 50px;
-  border: 1px solid rgb(7, 7, 7);
-}
-.small-images{
-  display: flex;
-  justify-content:space-between;
-  align-items: center;
-  width:100% ;
-  flex-basis: 24%;
- 
- 
-}
-.small-images img{
-  width: 100%;
-  height: 150px;
-  padding: 20px 0px;
-  padding-bottom: 6px;
-  mix-blend-mode: multiply; 
-  cursor: pointer;
-}
-.main-image{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.main-image img {
-  mix-blend-mode: multiply; 
-}
-
-#divide{
-  display: flex;
-  
-}
-
-/* ******************* Right Section of product details ****************** */
-.right-section-2{
-  margin-top: 100px;
-  margin-left: 60px;
-  width: 60%;
-  font-size: 1 rem;
-  gap: 10%;
-}
-.right-section-2 h4  {
-  padding: 10px 0 10px 0;
-}
-.right-section-2 h3  {
-  padding: 10px 0 10px 0;
-}
-.right-section-2  h2 {
-  padding: 10px 0 10px 0;
-}
-.right-section-2 select  {
- 
- display: block;
-  margin-bottom: 10px;
-  width: 10%;
-  padding: 10px 10px 10px 10px;
-}
-.right-section-2 input  {
-  padding: 10px 10px 10px 20px;
-  width: 10%;
-  margin-bottom: 10px;
-}
-
-.right-section-2  button {
-  padding: 10px 10px 10px 10px;
-  border: 2px solid rgb(233, 224, 224); 
-    border-radius: 10px;
-    cursor: pointer;
-    background-color: rgb(65, 147, 120);
-    font-size: 0.8rem;
-}
-.right-section-2   p {
-  padding: 10px 0 10px 0;
-}
 
 
 
-/* ************************* Blog page ********************** */
 
-.blog {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 60px 0px 0px 200px ;
-  width: 70%;
-}
-.blog-left-section img{
-  object-fit: cover;
-  width: 300px;
-  height: 300px;
-}
-.blog-right-section{
-  margin-left: 50px;
-  font-size: 1.5rem;
-  text-align: center;
-}
-.blog-right-section p{
-  padding-bottom: 10px;
-}
 
-/* ***************************************** Contact Page ****************************************************************8 */
-.Whatsapp{
-  background-color: aqua;
-  width: 20%;
-  height: 300px;
-}
-.Whatsapp h2 {
-  text-align: center;
-}
-.fa-whatsapp {
-  height: 20%;
-  width: 20;
-}
+
+
+
+
+
+
+
+
+
