@@ -17,19 +17,63 @@
        
   <div class="right-section">
         <ul class="list">
-         <li><a href="index.html"  >Home</a></li>
+         <li><a href="index.html"  class="active">Home</a></li>
          <li><a href="shop.html">Shop</a></li>
-         <li><a href="blog.html" class="active">Blog</a></li>
-         <li><a href="cart.html"><div class="cart-logo"><i class="fa fa-shopping-cart"></i></div></a></li>
+         <li><a href="blog.html">Blog</a></li>
+
+         
+         <li><a href="#" class="cart-logo"><i class="fa fa-shopping-cart"></i></a></li>
+
          <i class="fa-solid fa-xmark" id="close"></i>
         </ul>
         <div class="mobile">
-         <a href="cart.html"></a><img src="shopping-cart-logo.png" alt="" class="right-section-logo" >
+       
+
+         <a href="#" class="cart-logo right-section-logo" onclick="document.querySelector('.addToCart').classList.add('active1')">
+           <i class="fa fa-shopping-cart"></i>
+           <span class="counter">0</span>
+         </a>
+
+
+
+         <!-- <a href="cart.html" onclick=""><img src="shopping-cart-logo.png" alt="" class="right-section-logo" ></a> -->
          <i id="bar" class="fas fa-outdent"></i>
         </div>
         
   </div>
 </div>
+
+<!-- *************** AddToCart *************** -->
+<section class="addToCart">
+  <div class="cross-icon">
+    <i class="fa-solid fa-xmark"></i>
+  </div>
+  <h2>Your Cart</h2>
+  <div class="cartContent">
+    <div class="cart-content">
+    <!-- <div class="cartImage">
+       <img src="product-1.jpg" alt="" srcset="">
+    </div>
+    <div class="middle-section">
+      <p class="title">Green T shirt</p>
+      <p class="price">$50</p>
+    </div>
+    <div class="size-quantity">
+      <p class="size">Size:small</p>
+      <p class="quantity">Quantity:2</p>
+    </div>
+    <div class="remove-icon">
+      <i class="fa-solid fa-trash"></i> -->
+    </div>
+  </div>
+</div>
+
+  <div class="total">Total:$0</div>
+
+  <div class="buy-button">
+    <button>Buy Now</button>
+  </div>
+</section>
 
   <!-- ********************** Hero section *********************************** -->
    <div class="shop-section">
@@ -44,7 +88,7 @@
          <img src="blog-1.jpg" alt="">
       </div>
       <div class="blog-right-section">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium illum harum rem adipisci ipsum laudantium, consequatur laboriosam! Consequatur nesciunt, delectus eligendi quia nemo voluptatum veritatis ipsa soluta, nihil officiis sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nostrum magnam nisi unde aliquid omnis recusandae! Animi eaque obcaecati nisi voluptatem voluptate, suscipit incidunt odio dolorem culpa ad tenetur expedita?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium illum harum rem adipisci ipsum laudantium, consequatur laboriosam! Consequatur nesciunt, delectus 
       </div>
     </div>
     <div class="blog">
@@ -52,7 +96,7 @@
          <img src="blog-2.jpg" alt="">
       </div>
       <div class="blog-right-section">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium illum harum rem adipisci ipsum laudantium, consequatur laboriosam! Consequatur nesciunt, delectus eligendi quia nemo voluptatum veritatis ipsa soluta, nihil officiis sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nostrum magnam nisi unde aliquid omnis recusandae! Animi eaque obcaecati nisi voluptatem voluptate, suscipit incidunt odio dolorem culpa ad tenetur expedita?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium illum harum rem adipisci ipsum laudantium, consequatur laboriosam! Consequatur nesciunt, </p>
       </div>
     </div>
     <div class="blog">
@@ -60,7 +104,7 @@
          <img src="blog-3.jpg" alt="">
       </div>
       <div class="blog-right-section">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium illum harum rem adipisci ipsum laudantium, consequatur laboriosam! Consequatur nesciunt, delectus eligendi quia nemo voluptatum veritatis ipsa soluta, nihil officiis sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nostrum magnam nisi unde aliquid omnis recusandae! Animi eaque obcaecati nisi voluptatem voluptate, suscipit incidunt odio dolorem culpa ad tenetur expedita?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium illum harum rem adipisci ipsum laudantium, consequatur laboriosam! Consequatur nesciunt, </p>
       </div>
     </div>
 

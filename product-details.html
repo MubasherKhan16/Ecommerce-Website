@@ -10,28 +10,70 @@
 </head>
 <body>
 
-  <!-- ************************************************ Navbar ********************************************************* -->
-  <div class="navbar">
-    <a href="index.html"><img src="left-section-logo.png" class="left-section-logo"></a>
+ <!-- ************************************************ Navbar ********************************************************* -->
+ <div class="navbar">
+  <a href="index.html"><img src="left-section-logo.png" class="left-section-logo"></a>
+
+     
+<div class="right-section">
+      <ul class="list">
+       <li><a href="index.html"  class="active">Home</a></li>
+       <li><a href="shop.html">Shop</a></li>
+       <li><a href="blog.html">Blog</a></li>
 
        
-  <div class="right-section">
-        <ul class="list">
-         <li><a href="index.html" >Home</a></li>
-         <li><a href="shop.html">Shop</a></li>
-         <li><a href="blog.html" >Blog</a></li>
+       <li><a href="#" class="cart-logo"><i class="fa fa-shopping-cart"></i></a></li>
 
-         
-         <li><a href="cart.html"><div class="cart-logo"><i class="fa fa-shopping-cart"></i></div></a></li>
-         <i class="fa-solid fa-xmark" id="close"></i>
-        </ul>
-        <div class="mobile">
-         <a href="cart.html"></a><img src="shopping-cart-logo.png" alt="" class="right-section-logo" >
-         <i id="bar" class="fas fa-outdent"></i>
-        </div>
-        
+       <i class="fa-solid fa-xmark" id="close"></i>
+      </ul>
+      <div class="mobile">
+     
+
+       <a href="#" class="cart-logo right-section-logo" onclick="document.querySelector('.addToCart').classList.add('active1')">
+         <i class="fa fa-shopping-cart"></i>
+         <span class="counter">0</span>
+       </a>
+
+
+
+       <!-- <a href="cart.html" onclick=""><img src="shopping-cart-logo.png" alt="" class="right-section-logo" ></a> -->
+       <i id="bar" class="fas fa-outdent"></i>
+      </div>
+      
+</div>
+</div>
+
+<!-- *************** AddToCart *************** -->
+<section class="addToCart">
+  <div class="cross-icon">
+    <i class="fa-solid fa-xmark"></i>
+  </div>
+  <h2>Your Cart</h2>
+  <div class="cartContent">
+    <div class="cart-content">
+    <!-- <div class="cartImage">
+       <img src="product-1.jpg" alt="" srcset="">
+    </div>
+    <div class="middle-section">
+      <p class="title">Green T shirt</p>
+      <p class="price">$50</p>
+    </div>
+    <div class="size-quantity">
+      <p class="size">Size:small</p>
+      <p class="quantity">Quantity:2</p>
+    </div>
+    <div class="remove-icon">
+      <i class="fa-solid fa-trash"></i> -->
+    </div>
   </div>
 </div>
+
+  <div class="total">Total:$0</div>
+
+  <div class="buy-button">
+    <button>Buy Now</button>
+  </div>
+</section>
 
 
  <!-- *************************************** Product Details ****************************************************** -->
@@ -67,7 +109,7 @@
 
       <div class="right-section-2">
         <h4>ADDIDAS</h4>
-        <h3>Mens T-shirt</h3>
+        <h1>Mens T-shirt</h1>
         <h2>$139.00</h2>
         <select>
           <option>Select Size</option>
@@ -75,17 +117,12 @@
           <option>Large</option>
           <option>Medium</option>
         </select>
-        <input type="number" value="1">
+        <input type="number" value="1" min="1">
         <button>Add to cart</button>
         <h3>Product Details</h3>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, officiis explicabo. Iste, odit. Illum, nam. Enim, perferendis minus. Dignissimos ab ducimus aut iste rerum quos maiores debitis vitae sequi molestias.</p>
       </div>
   </section>
-
-
-
-  
- 
 
    <div class="footer">
     <div class="footer-1">
