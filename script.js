@@ -187,7 +187,7 @@ buyButtonClick.addEventListener("click",()=>{
   }
   cartProducts.forEach(item=>{
     item.remove();
-    localStorage.setItem("countCart","0");
+    localStorage.setItem("countCart","0")||0;
     updateCounterDisplay();
     updateTotal();
     alert("Thank you for your shopping from our Store");

@@ -29,7 +29,10 @@
   text-align: center;
   color: aliceblue;
 }
-
+.counter2{
+  display: none;
+  align-items: center;
+}
 
 .mobile{
   display: none;
@@ -660,11 +663,12 @@
   margin-bottom: 10px;
   margin-top: 50px;
 }
-.mobile{
+.mobile {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 #bar{
   height: 50px;
   width: 50px;
